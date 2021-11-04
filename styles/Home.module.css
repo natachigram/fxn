@@ -1,116 +1,403 @@
 .container {
-  padding: 0 2rem;
+  color: #fff;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
+.container header {
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  height: 35rem;
+  margin: 0 4rem;
+}
+
+.container header .headerText h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.container header .headerText h4 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.container header .headerText p {
+  font-size: 14px;
+  font-weight: medium;
+  max-width: 30rem;
+}
+
+/* purchase section */
+
+.container .purchase {
+  display: flex;
+  align-items: center;
+  margin: 0 4rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container .purchase__headerText p {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
+.container .purchase__quickLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.container .purchase__quickLinks .box {
+  width: 100px;
+  height: 100px;
+  background-color: #c4c4c4;
+  margin: 1rem;
+}
+
+/* how  it works  */
+
+.container .howItWorks__section {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 4rem;
+  min-height: 20rem;
+  margin-top: 5rem;
+  padding: 1rem 4rem;
+}
+
+.container .howItWorks__section .howItWork {
+  display: flex;
+  flex-direction: column;
+  flex: 0.37;
+}
+
+.container .howItWorks__section .howItWork h2 {
+  margin-bottom: 2rem;
+}
+
+.container .howItWorks__section .howItWork p {
+  margin-bottom: 2rem;
+}
+
+.container .howItWorks__section .cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 0.63;
+  padding-left: 2rem;
+  flex-wrap: wrap;
+}
+
+.container .howItWorks__section .cardContainer .card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex: 0.5;
+  margin-bottom: 2rem;
+}
+
+.container .howItWorks__section .cardContainer .card .icon {
+  display: grid;
+  place-items: center;
+  margin-right: 1rem;
+  background-color: #23253a;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.container .howItWorks__section .cardContainer .card .textContent {
+  width: 14rem;
+}
+
+.container .howItWorks__section .cardContainer .card .textContent h3 {
+  margin-bottom: 1rem;
+}
+
+/* about section */
+
+.container .about__section {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 4rem;
+  min-height: 20rem;
+  margin-top: 5rem;
+  padding: 1rem 4rem;
+}
+
+.container .about {
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+}
+
+.container .about__section .about h4 {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.container .about__section .about h2 {
+  margin-bottom: 2rem;
+}
+
+.container .about__section .about p {
+  margin-bottom: 2rem;
+}
+
+/* why forex trade */
+
+.container .why {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 4rem;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.container .why__headerText p {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.container .why__headerText .why__description {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 75%;
+  font-size: 16px;
+}
+
+.container .why__quickLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.container .why__quickLinks .box {
+  width: 100px;
+  height: 100px;
+  background-color: #c4c4c4;
+  margin: 1rem;
+}
+
+/* plan section */
+
+.container .plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 4rem;
+  margin-top: 7rem;
+  padding: 1rem 4rem;
+  margin-bottom: 7rem;
+}
+
+.container .plan h3 {
+  margin-bottom: 4rem;
+}
+
+.container .plan .planCardContainer {
+  display: flex;
+  flex-wrap: wrap;
   flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container .plan .planCardContainer .planCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 250px;
+  height: 250px;
+}
+
+.container .plan .planCardContainer .planCard h4 {
+  margin-bottom: 0.5rem;
+}
+.container .plan .planCardContainer .planCard p {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.container .plan .planCardContainer .planCard hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* testimony section */
+
+.container .testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 7rem;
+  padding: 5rem 8rem;
+  background-color: #f9fafd;
+  color: #000;
+}
+
+.container .testimony h3 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 24px;
+}
+
+.container .testimony .testimonyCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: #f9fafd;
+  margin-top: 4rem;
+}
+
+.container .testimony .testimonyCardContainer .testimonyCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  padding: 1.5rem;
+  border-radius: 14px;
+  width: 300px;
+  height: 400px;
+  transition: 0.2s ease-in;
+  margin-bottom: 1rem;
+}
+
+.container .testimony .testimonyCardContainer .testimonyCard:hover {
+  background-color: #3671e9;
+  color: #fff;
+}
+
+.container .testimony .testimonyCardContainer .testimonyCard .content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .testimony .testimonyCardContainer .testimonyCard .content p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.container
+  .testimony
+  .testimonyCardContainer
+  .testimonyCard
+  .content
+  .location {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0d0d2b;
+}
+
+.container
+  .testimony
+  .testimonyCardContainer
+  .testimonyCard
+  .content
+  .location
+  span {
+  color: #bdbdbd;
+}
+
+/* faq section */
+.container .faq {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+  padding: 5rem 8rem;
+  background-color: #fff;
+  color: #000;
   text-align: center;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.container .faq h4 {
+  font-size: 18px;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+.container .faq h3 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.container .faq p {
+  width: 70%;
+  font-size: 18px;
 }
 
-.grid {
+.container .faq .faq__cardContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.container .faq .faq__cardContainer .faq__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50rem;
+  height: 65px;
+  border-radius: 8px;
+  background-color: #c4c4c4;
+  margin-top: 1rem;
+}
+
+.container .faq .faq__cardContainer .faq__card .card__leftSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  flex: 0.6;
+  margin-left: 2rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.container .faq .faq__cardContainer .faq__card .card__leftSide span {
+  margin-right: 2rem;
+}
+
+.container .faq .faq__cardContainer .faq__card .iconRight {
+  margin-right: 2rem;
+  font-size: 25px;
+  color: #fff;
+}
+
+/* contact section */
+.container .contact {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
+  padding: 5rem 4rem;
+  justify-content: space-around;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.container .contact div p {
+  margin-bottom: 1rem;
+  font-size: 14px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.container .contact div h3 {
+  font-size: 20px;
 }
