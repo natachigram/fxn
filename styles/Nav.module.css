@@ -1,16 +1,29 @@
 .nav {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   color: #fff;
   font-size: 14px;
   padding: 1rem 4rem;
+  width: 100%;
+  background-color: #0b0d25;
 }
 
 .nav span {
   display: flex;
 
   flex: 0.3;
+}
+
+.nav span a {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.nav span .logo {
+  color: #f17b0b;
 }
 
 .nav ul {
@@ -22,4 +35,37 @@
 
 .nav ul li {
   list-style: none;
+}
+
+.nav .hamburger {
+  display: none;
+  position: fixed;
+  right: 5%;
+  z-index: 2000;
+}
+
+/* mobile nav */
+
+@media only screen and (max-width: 768px) {
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    background-color: #0a0a0af5;
+    width: 75vw;
+    height: 100vh;
+    top: 0;
+    right: 0%;
+    z-index: 1000;
+  }
+
+  .nav .showSidebar {
+    display: none;
+  }
+
+  .nav .hamburger {
+    display: block;
+  }
 }

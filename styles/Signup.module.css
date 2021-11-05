@@ -1,0 +1,99 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 87vh;
+  padding-top: 4rem;
+}
+
+.signup h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.signup h2 span {
+  color: #f17b0b;
+}
+
+.signup .form__container {
+  overflow-y: scroll;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #fff;
+  width: 100%;
+}
+
+.signup .form__container h3 {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.signup .form__container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 14px;
+  font-weight: normal;
+  background-color: #1a1c34;
+  width: 30%;
+}
+
+.signup .form__container form .feilds {
+  width: 100%;
+  border-radius: 10rem;
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+  background-color: #0b0d25;
+  padding: 0.8rem;
+}
+
+.signup .form__container form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 11px;
+}
+
+.signup .form__container form div label {
+  color: #fff;
+}
+
+.signup .form__container form div input {
+  margin-right: 0.5rem;
+  accent-color: #0b0d25;
+}
+
+.signup .form__container form div a {
+  text-decoration: underline;
+}
+
+.signup .form__container form button {
+  width: 100%;
+  height: 2.2rem;
+}
+
+.signup .form__container p {
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.signup .form__container p a {
+  margin-left: 0.5rem;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .signup .form__container form {
+    width: 100%;
+  }
+}

@@ -20,3 +20,28 @@
   justify-content: space-between;
   flex: 0.3;
 }
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    padding: 0rem 1rem;
+  }
+
+  .footer p {
+    display: flex;
+    flex: 0.7;
+    font-size: 11px;
+  }
+
+  .footer .footerLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 0.3;
+    font-size: 11px;
+  }
+}

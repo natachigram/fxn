@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
 import avatar from '../public/assets/Ellipse49.png';
@@ -16,7 +17,7 @@ export default function Home() {
 
       {/* header section */}
 
-      <header>
+      <header id='home'>
         <div className={styles.headerText}>
           <h1>Invest today!</h1>
           <h4>Invest today!</h4>
@@ -29,7 +30,7 @@ export default function Home() {
 
       {/* quick link section */}
 
-      <section className={styles.purchase}>
+      <section className={styles.purchase} id='quick_link'>
         <div className={styles.purchase__headerText}>
           <p>Purchase bitcoin</p>
           <h3>Quick Link to Purchase Bitcoin</h3>
@@ -51,7 +52,7 @@ export default function Home() {
 
       {/* how it works sections */}
 
-      <section className={styles.howItWorks__section}>
+      <section className={styles.howItWorks__section} id='how_it_works'>
         <div className={styles.howItWork}>
           <h2>How it works</h2>
           <p>
@@ -62,21 +63,25 @@ export default function Home() {
             24 hours support on live chat,email, and in-person for one on one
             support - when you need it most.
           </p>
-          <button className='signup__secondary'>
-            Sign Up
-            <svg
-              width='28'
-              height='16'
-              viewBox='0 0 28 16'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'
-            >
-              <path
-                d='M27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.29289L21.3431 0.928932C20.9526 0.538408 20.3195 0.538408 19.9289 0.928932C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM0 9H27V7H0V9Z'
-                fill='white'
-              />
-            </svg>
-          </button>
+          <Link href='/signUp'>
+            <a>
+              <button className='signup__secondary'>
+                Sign Up
+                <svg
+                  width='28'
+                  height='16'
+                  viewBox='0 0 28 16'
+                  fill='none'
+                  xmlns='http://www.w3.org/2000/svg'
+                >
+                  <path
+                    d='M27.7071 8.70711C28.0976 8.31658 28.0976 7.68342 27.7071 7.29289L21.3431 0.928932C20.9526 0.538408 20.3195 0.538408 19.9289 0.928932C19.5384 1.31946 19.5384 1.95262 19.9289 2.34315L25.5858 8L19.9289 13.6569C19.5384 14.0474 19.5384 14.6805 19.9289 15.0711C20.3195 15.4616 20.9526 15.4616 21.3431 15.0711L27.7071 8.70711ZM0 9H27V7H0V9Z'
+                    fill='white'
+                  />
+                </svg>
+              </button>
+            </a>
+          </Link>
         </div>
         <div className={styles.cardContainer}>
           <div className={styles.card}>
@@ -172,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* about section */}
-      <section className={styles.about__section}>
+      <section className={styles.about__section} id='about'>
         <div className={styles.about}>
           <h4>WHAT IS FXOPTIONSGENIX</h4>
           <h2>How it works</h2>
@@ -206,7 +211,7 @@ export default function Home() {
 
       {/* why forex section */}
 
-      <section className={styles.why}>
+      <section className={styles.why} id='why_forex'>
         <div className={styles.why__headerText}>
           <p>WHY FXOPTIONSGENIX</p>
           <h3>Competitive Benefit</h3>
@@ -228,7 +233,7 @@ export default function Home() {
 
       {/* our investment */}
 
-      <section className={styles.plan}>
+      <section className={styles.plan} id='our_investment'>
         <h3>Our Investment Plan</h3>
         <div className={styles.planCardContainer}>
           <div className={styles.planCard}>
@@ -257,7 +262,7 @@ export default function Home() {
 
       {/* testimnial section */}
 
-      <section className={styles.testimony}>
+      <section className={styles.testimony} id='testimonial'>
         <h4>REVIEWS</h4>
         <h3>TESTIMONIALS</h3>
         <p>Below are the testimonies from some of our customers</p>
@@ -320,7 +325,7 @@ export default function Home() {
 
       {/* faq section */}
 
-      <section className={styles.faq}>
+      <section className={styles.faq} id='faq'>
         <h4>FAQS</h4>
         <h3>Frequently Asked Questions</h3>
         <p>
@@ -361,7 +366,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.contact}>
+      <section className={styles.contact} id='contact'>
         <div>
           <p>Contact Us</p>
           <h3>Get In Touch</h3>
